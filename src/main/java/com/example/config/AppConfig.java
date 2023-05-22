@@ -11,8 +11,6 @@ import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 @Configuration
 @EnableWebMvc
 @Import({org.springdoc.core.SpringDocConfiguration.class,
-        org.springdoc.webmvc.core.SpringDocWebMvcConfiguration.class,
-        org.springdoc.webmvc.ui.SwaggerConfig.class,
         org.springdoc.core.SwaggerUiConfigProperties.class,
         org.springdoc.core.SwaggerUiOAuthProperties.class,
         org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration.class})

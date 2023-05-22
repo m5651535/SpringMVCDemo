@@ -22,8 +22,8 @@
   <dependencies>
     <dependency>
       <groupId>org.springdoc</groupId>
-      <artifactId>springdoc-openapi-ui</artifactId>
-      <version>1.5.2</version>
+      <artifactId>springdoc-openapi-webmvc-core</artifactId>
+      <version>1.7.0</version>
     </dependency>
     <dependency>
       <groupId>junit</groupId>
