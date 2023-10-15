@@ -6,17 +6,12 @@
 
   <display-name>Spring MVC Example</display-name>
 
-  <!-- 配置DispatcherServlet -->
   <servlet>
     <servlet-name>dispatcherServlet</servlet-name>
     <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
     <init-param>
-      <param-name>contextClass</param-name>
-      <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
-    </init-param>
-    <init-param>
       <param-name>contextConfigLocation</param-name>
-      <param-value>com.example.config.AppConfig</param-value> <!-- 指定Spring配置类的位置 -->
+      <param-value>classpath:applicationContext.xml</param-value>
     </init-param>
     <load-on-startup>1</load-on-startup>
   </servlet>
@@ -25,5 +20,6 @@
     <servlet-name>dispatcherServlet</servlet-name>
     <url-pattern>/</url-pattern>
   </servlet-mapping>
+
 
 </web-app>
